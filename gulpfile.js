@@ -9,7 +9,7 @@ gulp.task('html', function(){
 });
 
 gulp.task('js', function() {
-    return gulp.src('js/app.js');
-    .pipe(browswer.browswerify());
+    return gulp.src('js/app.js')
+    .pipe(browser.browserify())
     .pipe(gulp.dest('public'));
 })
