@@ -11,7 +11,7 @@ module.exports = View.extend({
     }, // put this object in 
     render: function () {
         console.log('rendering');
-        this.renderWithTemplate()
+        this.renderWithTemplate();
     },
 
 })
