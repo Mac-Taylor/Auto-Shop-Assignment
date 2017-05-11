@@ -15,7 +15,7 @@ module.exports = View.extend({
 
     events: {
         'click .mpgbutton': 'boostMPG',
-        'click .tirebutton': 'repairTires'
+        'click .tirebutton': 'repairTires',
     },
 
     boostMPG: function () {
