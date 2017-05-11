@@ -10,6 +10,7 @@ module.exports = View.extend({
         'model.exhaust': '.exhaust',
         'model.horsepower': '.horsepower',
         'model.mpg': '.mpg',
+        'model.totalcost': '.totalcost',
     }, // put this object in 
     events: {
         'click .mpgbutton': 'boostMPG',
@@ -21,7 +22,6 @@ module.exports = View.extend({
     },
     repairTires: function () {
         console.log('Tires are fixed!');
-        this.model.
     },
     render: function () {
         console.log('rendering');

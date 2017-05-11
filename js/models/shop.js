@@ -13,6 +13,7 @@ module.exports = State.extend({
         exhaust: 'boolean',
         horsepower: 'number',
         mpg: 'number',
+        totalcost: 'number',
     },
 
 });
