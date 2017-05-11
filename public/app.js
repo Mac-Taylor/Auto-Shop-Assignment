@@ -18,6 +18,9 @@ window.addEventListener('load', function () {
     view.render();
 });
 },{"./models/shop":2,"./views/shop":3}],2:[function(require,module,exports){
+
+
+
 let State = require('ampersand-state');
 
 
@@ -34,6 +37,8 @@ module.exports = State.extend({
 
 });
 },{"ampersand-state":402}],3:[function(require,module,exports){
+
+
 let View = require('ampersand-view');
 
 module.exports = View.extend({
@@ -47,7 +52,7 @@ module.exports = View.extend({
     }, // put this object in 
     render: function () {
         console.log('rendering');
-        this.renderWithTemplate()
+        this.renderWithTemplate();
     },
 
 })
