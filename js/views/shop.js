@@ -21,6 +21,7 @@ module.exports = View.extend({
     },
     repairTires: function () {
         console.log('Tires are fixed!');
+        this.model.
     },
     render: function () {
         console.log('rendering');
