@@ -50,6 +50,14 @@ module.exports = View.extend({
         'model.horsepower': '.horsepower',
         'model.mpg': '.mpg',
     }, // put this object in 
+    events: {
+        'click .mpgbutton': 'boostMPG',
+        'click .tirebutton': ''
+    },
+    boostMPG: function () {
+        this.model.mpg = this.model.mpg + 5;
+        this.model.horsepower = this.model.horsepower - 1;
+    },
     render: function () {
         console.log('rendering');
         this.renderWithTemplate();
