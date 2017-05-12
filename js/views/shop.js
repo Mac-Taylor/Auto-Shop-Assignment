@@ -16,10 +16,10 @@ module.exports = View.extend({
     events: {
         'click .mpgbutton': 'boostMPG',
         'click .tirebutton': 'repairTires',
-        'click .redpaintbutton': 'changeColor',
-        'click .redpaintbutton': 'changeColor',
-        'click .redpaintbutton': 'changeColor',
-        'click .redpaintbutton': 'changeColor',
+        'click .redpaintbutton': 'changeColorRed',
+        'click .greenpaintbutton': 'changeColorGreen',
+        'click .orangepaintbutton': 'changeColorOrange',
+        'click .blackpaintbutton': 'changeColorBlack',
     },
 
     boostMPG: function () {
@@ -35,9 +35,18 @@ module.exports = View.extend({
             this.model.totalcost = this.model.totalcost + 200;
             this.model.tires++;
         }
- },
+    },
     // write a changecolor function for each button/color
-    changeColor: function () {
+    changeColorRed: function () {
+        // if (not if statement, just English) you hit (color) button change it to that color
+    },
+    changeColorGreen: function () {
+        // if (not if statement, just English) you hit (color) button change it to that color
+    },
+    changeColorOrange: function () {
+        // if (not if statement, just English) you hit (color) button change it to that color
+    },
+    changeColorBlack: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
     },
 
