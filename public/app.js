@@ -81,38 +81,22 @@ module.exports = View.extend({
     changeColorRed: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
         this.model.paint = 'Red';
-        if (this.model.paint === 'Red') {
-            this.model.totalcost = this.model.totalcost;
-        } else {
-            this.model.totalcost = this.model.totalcost + 300;
-        }
+        this.model.totalcost = this.model.totalcost + 300;
     },
     changeColorGreen: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
         this.model.paint = 'Green';
-        if (this.model.paint === 'Green') {
-            this.model.totalcost = this.model.totalcost;
-        } else {
-            this.model.totalcost = this.model.totalcost + 300;
-        }
+        this.model.totalcost = this.model.totalcost + 300;
     },
     changeColorOrange: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
         this.model.paint = 'Orange';
-        if (this.model.paint === 'Orange') {
-            this.model.totalcost = this.model.totalcost;
-        } else {
-            this.model.totalcost = this.model.totalcost + 300;
-        }
+        this.model.totalcost = this.model.totalcost + 300;
     },
     changeColorBlack: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
-        this.model.paintg = 'Black';        
-        if (this.model.paint === 'Black') {
-            this.model.totalcost = this.model.totalcost;
-        } else {
-            this.model.totalcost = this.model.totalcost + 300;
-        }
+        this.model.paintg = 'Black';
+        this.model.totalcost = this.model.totalcost + 300;
     },
 
     render: function () {
