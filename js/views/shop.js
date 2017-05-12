@@ -39,15 +39,19 @@ module.exports = View.extend({
     // write a changecolor function for each button/color
     changeColorRed: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
+        this.model.color === 'Red';
     },
     changeColorGreen: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
+        this.model.color === 'Green';
     },
     changeColorOrange: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
+        this.model.color === 'Orange';
     },
     changeColorBlack: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
+        this.model.color === 'Black';
     },
 
     render: function () {
