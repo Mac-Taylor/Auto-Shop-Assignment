@@ -20,6 +20,7 @@ module.exports = View.extend({
         'click .greenpaintbutton': 'changeColorGreen',
         'click .orangepaintbutton': 'changeColorOrange',
         'click .blackpaintbutton': 'changeColorBlack',
+        'click .exhaustbutton': 'fixExhaust',
     },
 
     boostMPG: function () {
@@ -56,6 +57,15 @@ module.exports = View.extend({
         // if (not if statement, just English) you hit (color) button change it to that color
         this.model.paint = 'Black';
         this.model.totalcost = this.model.totalcost + 300;
+    },
+    fixExhaust: function () {
+        if (this.model.exhaust === false) {
+            this.model.exhuast = true;
+            return 'Exhaust is fixed';
+        }
+        if (this.model.exhaust === true) {
+            return 'Exhaust is fixed';
+        }
     },
 
     render: function () {
