@@ -58,14 +58,12 @@ module.exports = View.extend({
         this.model.paint = 'Black';
         this.model.totalcost = this.model.totalcost + 300;
     },
-    fixExhaust: function () {
+    fixExhaust: function () { // this is what happens when you 
         if (this.model.exhaust === false) {
-            this.model.exhuast = true;
-            return 'Exhaust is fixed';
+            this.model.exhaust = 'Fixed';
+            this.model.totalcost = this.model.totalcost + 300;
         }
-        if (this.model.exhaust === true) {
-            return 'Exhaust is fixed';
-        }
+
     },
 
     render: function () {
