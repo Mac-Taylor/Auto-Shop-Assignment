@@ -21,6 +21,7 @@ module.exports = View.extend({
         'click .orangepaintbutton': 'changeColorOrange',
         'click .blackpaintbutton': 'changeColorBlack',
         'click .exhaustbutton': 'fixExhaust',
+        'click .horsepowerbutton': 'improveHP',
     },
 
     boostMPG: function () {
@@ -66,6 +67,14 @@ module.exports = View.extend({
             // HTML to display 'Broken' and 'Fixed' rather than just 'true'. but I'm gonna move on, 
             // it works for the most part right now.
     },
+
+    improveHP: function () {
+        this.model.horsepower = this.model.horsepower + 10;
+        this.model.totalcost = this.model.totalcost + 100;
+    },
+
+    
+
 
     render: function () {
         console.log('rendering');
