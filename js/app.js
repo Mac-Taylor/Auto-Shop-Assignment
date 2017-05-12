@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
     let shop = new ShopModel();
     shop.tires = 2;
-    shop.paint = 'red';
+    shop.paint = 'Needs a fresh coat!';
     shop.exhaust = false; //'false' means exhuast is broken
     shop.horsepower = 120;
     shop.mpg = 33;
