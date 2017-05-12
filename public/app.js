@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
     let shop = new ShopModel();
     shop.tires = 2;
     shop.paint = 'Needs a fresh coat!';
-    shop.exhaust = false; //'false' means exhuast is broken
+    shop.exhaust = false; //use a boolean here
     shop.horsepower = 120;
     shop.mpg = 33;
     shop.totalcost = 0;
@@ -99,14 +99,13 @@ module.exports = View.extend({
         this.model.paint = 'Black';
         this.model.totalcost = this.model.totalcost + 300;
     },
-    fixExhaust: function () {
+    fixExhaust: function () { // this is what happens when you 
         if (this.model.exhaust === false) {
-            this.model.exhuast = true;
-            return 'Exhaust is fixed';
-        }
-        if (this.model.exhaust === true) {
-            return 'Exhaust is fixed';
-        }
+            this.model.exhaust = true;
+            this.model.totalcost = this.model.totalcost + 300;
+        }; // In the interest of moving on I'm moving on, but I'd ideally like my
+            // HTML to display 'Broken' and 'Fixed' rather than just 'true'. but I'm gonna move on, 
+            // it works for the most part right now.
     },
 
     render: function () {

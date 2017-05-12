@@ -60,10 +60,11 @@ module.exports = View.extend({
     },
     fixExhaust: function () { // this is what happens when you 
         if (this.model.exhaust === false) {
-            this.model.exhaust = 'Fixed';
+            this.model.exhaust = true;
             this.model.totalcost = this.model.totalcost + 300;
-        }
-
+        }; // In the interest of moving on I'm moving on, but I'd ideally like my
+            // HTML to display 'Broken' and 'Fixed' rather than just 'true'. but I'm gonna move on, 
+            // it works for the most part right now.
     },
 
     render: function () {
