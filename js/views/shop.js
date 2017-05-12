@@ -52,7 +52,7 @@ module.exports = View.extend({
     },
     changeColorBlack: function () {
         // if (not if statement, just English) you hit (color) button change it to that color
-        this.model.paint = 'Black';
+        this.model.paintg = 'Black';
     },
 
     render: function () {
