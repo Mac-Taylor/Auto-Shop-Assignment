@@ -62,6 +62,7 @@ module.exports = View.extend({
         'click .orangepaintbutton': 'changeColorOrange',
         'click .blackpaintbutton': 'changeColorBlack',
         'click .exhaustbutton': 'fixExhaust',
+        'click .HPbutton': 'improveHP',
     },
 
     boostMPG: function () {
@@ -108,12 +109,21 @@ module.exports = View.extend({
             // it works for the most part right now.
     },
 
+    improveHP: function () {
+        console.log('hp');
+        this.model.totalcost = this.model.totalcost + 100;
+        this.model.horsepower = this.model.horsepower + 10;
+    },
+
+    
+
+
     render: function () {
         console.log('rendering');
         this.renderWithTemplate();
     },
 
-})
+});
 },{"ampersand-view":621}],4:[function(require,module,exports){
 var assign = require('lodash/assign');
 

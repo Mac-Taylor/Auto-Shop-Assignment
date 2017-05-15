@@ -21,7 +21,7 @@ module.exports = View.extend({
         'click .orangepaintbutton': 'changeColorOrange',
         'click .blackpaintbutton': 'changeColorBlack',
         'click .exhaustbutton': 'fixExhaust',
-        'click .horsepowerbutton': 'improveHP',
+        'click .HPbutton': 'improveHP',
     },
 
     boostMPG: function () {
@@ -69,8 +69,9 @@ module.exports = View.extend({
     },
 
     improveHP: function () {
-        this.model.horsepower = this.model.horsepower + 10;
+        console.log('hp');
         this.model.totalcost = this.model.totalcost + 100;
+        this.model.horsepower = this.model.horsepower + 10;
     },
 
     
@@ -81,4 +82,4 @@ module.exports = View.extend({
         this.renderWithTemplate();
     },
 
-})
+});
